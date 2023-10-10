@@ -1,0 +1,132 @@
+.dropdown {
+  z-index: 1;
+  position: absolute;
+  top: 70px;
+  right: 15%;
+  width: 331px;
+  min-height: 192px;
+  .myNotificationBox {
+    position: relative;
+    background-color: rgba(84, 88, 247, 1);
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      position: absolute;
+      top: 13px;
+      left: 20px;
+      height: 38px;
+      width: 38px;
+    }
+    .myNotification {
+      font-size: 20px;
+      font-family: "Outfit", Courier, monospace;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+  .outterNotificationBox {
+    position: relative;
+    width: 100%;
+    min-height: 64px;
+    box-sizing: border-box;
+    display: flex;
+    background: #f6f6f6;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+    cursor: pointer;
+    ::after {
+      content: "";
+      position: absolute;
+      left: 5%; /* Center the line by setting the left offset to 10% */
+      bottom: 0;
+      width: 90%;
+      height: 1px;
+      background-color: #d1cace;
+    }
+    &:last-child {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .picture {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-left: 15px;
+    }
+    .notificationBox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 70%;
+      margin-left: 5px;
+      .notification {
+        width: 100%;
+        height: 70%;
+        overflow-wrap: break-word;
+        font-size: 16px;
+        font-family: "Outfit", Courier, monospace;
+        font-weight: 500;
+        color: #000;
+      }
+      .notificationRead {
+        width: 90%;
+        overflow-wrap: break-word;
+        font-size: 16px;
+        font-family: "Outfit", Courier, monospace;
+        font-weight: 500;
+        color: #909090;
+      }
+      .when {
+        font-size: 14px;
+        font-family: "Outfit", Courier, monospace;
+        font-weight: 700;
+        color: #5458f7;
+      }
+      .whenRead {
+        font-size: 14px;
+        font-family: "Outfit", Courier, monospace;
+        font-weight: 500;
+        color: #909090;
+      }
+    }
+    .checkRead {
+      margin-right: 10px;
+      display: none;
+      position: absolute;
+      right: 5px;
+    }
+    .check {
+      margin-right: 10px;
+      position: absolute;
+      right: 5px;
+    }
+  }
+  .showMoreBox {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+    border-radius: 0px 0px 20px 20px;
+    .showMore {
+      all: unset;
+      font-size: 16px;
+      font-family: "Outfit", Courier, monospace;
+      font-weight: 400;
+      color: #000;
+      text-decoration-line: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dropdown {
+    right: 4%;
+  }
+}

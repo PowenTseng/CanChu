@@ -1,0 +1,65 @@
+.personalProfile {
+  width: 370px;
+  border: 1px solid rgba(243, 243, 243, 1);
+  background-color: white;
+  padding: 23px 11.09px 23px 15.88px;
+  border-radius: 20px;
+  .editBox {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(84, 88, 247, 1);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .editWord {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 1);
+      font-family: "Outfit", Courier, monospace;
+      font-weight: 700;
+    }
+  }
+  .introHobbyBox {
+    width: 90%;
+    margin-top: 19px;
+    margin-right: 10px;
+    margin-left: 10px;
+    .introBox {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+      .introHeading {
+        font-size: 18px;
+        color: rgba(82, 82, 82, 1);
+        font-family: "Outfit", Courier, monospace;
+        font-weight: 700;
+      }
+      .introContent {
+        font-size: 16px;
+        color: rgba(92, 92, 92, 1);
+        font-family: "Outfit", Courier, monospace;
+        font-weight: 500;
+        margin-left: 5px;
+        margin-top: 8px;
+      }
+    }
+    .hobbyBox {
+      display: flex;
+      flex-direction: column;
+      .hobbyHeading {
+        font-size: 18px;
+        color: rgba(82, 82, 82, 1);
+        font-family: "Outfit", Courier, monospace;
+        font-weight: 700;
+      }
+      .hobbyContent {
+        font-size: 16px;
+        color: rgba(0, 0, 0, 1);
+        font-family: "Outfit", Courier, monospace;
+        font-weight: 500;
+        margin-left: 5px;
+        margin-top: 9px;
+      }
+    }
+  }
+}

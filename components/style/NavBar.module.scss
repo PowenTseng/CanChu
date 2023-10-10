@@ -1,0 +1,218 @@
+.navBarBox {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+  border-bottom: solid 1px rgba(243, 243, 243, 1);
+  position: relative;
+  .canChuSearchBox {
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    .canChu {
+      color: rgba(119, 99, 251, 1);
+      font-size: 37px;
+    }
+    .searchBar {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      padding: 12px 18px;
+      align-items: center;
+      box-sizing: border-box;
+      margin-left: 20px;
+      width: 330px;
+      height: 48px;
+      background-color: rgba(240, 242, 245, 1);
+      border: solid rgba(217, 217, 217, 1) 1px;
+      border-radius: 10px;
+      .searchIconWordBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 24px;
+        .searchIcon {
+          width: 17px;
+          height: 17px;
+        }
+        .searchWord {
+          font-size: 15px;
+          color: rgba(86, 100, 112, 1);
+          font-family: "Outfit", Courier, monospace;
+          background-color: transparent;
+          border: none;
+          width: 100%;
+          height: 80%;
+          outline: none;
+        }
+      }
+      .searchResults {
+        position: absolute;
+        top: 80%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 0;
+        list-style: none;
+        z-index: 2;
+        .searchResultsList {
+          display: flex;
+          align-items: center;
+          padding: 11px;
+          border: 1px rgba(217, 217, 217, 1) solid;
+          &:first-child {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+          }
+
+          &:last-child {
+            border-bottom: none; // Remove the bottom border for the last item
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+          }
+          .userPicture {
+            object-fit: cover;
+            border-radius: 50%;
+          }
+          .userPicture {
+            object-fit: cover;
+            border-radius: 50%;
+          }
+          .userName {
+            cursor: pointer;
+            color: rgba(86, 100, 112, 1);
+            font-size: 15px;
+            font-family: "Outfit", Courier, monospace;
+            font-weight: 500;
+            text-decoration: none;
+            overflow-wrap: break-word;
+            width: 80%;
+            margin-left: 5%;
+            overflow-wrap: break-word;
+            width: 80%;
+            margin-left: 5%;
+          }
+        }
+      }
+    }
+  }
+  .profileNotificationContainer {
+    display: flex;
+    align-items: center;
+    .notificationContainer {
+      position: relative; /* New container with relative positioning */
+      display: inline-block;
+      padding: 8px 8px 0px 0px;
+      box-sizing: border-box;
+      margin-right: 14px;
+      .notificationNumber {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .notificationIcon {
+        cursor: pointer;
+      }
+    }
+    .profileContainer {
+      .profilePicture {
+        border-radius: 50%;
+        object-fit: cover;
+        object-fit: cover;
+      }
+      .dropdown {
+        z-index: 1;
+        position: absolute;
+        top: 70px;
+        right: 5%;
+        width: 261px;
+        min-height: 192px;
+        .myNameBox {
+          position: relative;
+          background-color: rgba(84, 88, 247, 1);
+          border-radius: 20px 20px 0px 0px;
+          padding: 0px 10px 0px 10px;
+          box-sizing: border-box;
+          width: 261px;
+          min-height: 64px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .profileContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border: solid white 3px;
+            border-radius: 50%;
+            margin-right: 5%;
+            .insideProfilePicture {
+              object-fit: cover;
+              border-radius: 50%;
+            }
+            .insideProfilePicture {
+              object-fit: cover;
+              border-radius: 50%;
+            }
+          }
+          .myName {
+            font-size: 20px;
+            font-family: "Outfit", Courier, monospace;
+            font-weight: 700;
+            color: #fff;
+            overflow-wrap: break-word;
+            width: 60%;
+          }
+        }
+        .profileBox {
+          width: 261px;
+          height: 64px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #f6f6f6;
+          .personalProfile {
+            font-size: 22px;
+            font-family: "Outfit", Courier, monospace;
+            font-weight: 500;
+            color: #000;
+          }
+        }
+        .logOutBox {
+          width: 261px;
+          height: 64px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #f6f6f6;
+          border-radius: 0px 0px 20px 20px;
+          .logOut {
+            all: unset;
+            font-size: 22px;
+            font-family: "Outfit", Courier, monospace;
+            font-weight: 500;
+            color: #000;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navBarBox {
+    .canChuSearchBox {
+      width: 50%;
+      .searchBar {
+        width: 70%;
+      }
+    }
+  }
+}

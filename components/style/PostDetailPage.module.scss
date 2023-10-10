@@ -1,0 +1,25 @@
+.loadingBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .post {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .post {
+      width: 90%; /* Take up the full width of the screen */
+    }
+  }
+}

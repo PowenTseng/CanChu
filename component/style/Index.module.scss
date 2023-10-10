@@ -1,0 +1,26 @@
+.page{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 135px 0 135px;
+    .post{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sideBarBox{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        .aboutUsBox{
+            width: 274px;
+            height: 44px;
+            margin-top: 24px;
+            .aboutUs{
+                font-size: 16px;
+                color: rgba(82, 82, 82, 1);
+                font-family: "Helvetica Neue", Courier, monospace;
+                font-weight: 400;
+            }
+        }
+    }
+}

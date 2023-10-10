@@ -1,0 +1,50 @@
+.loadingBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.page {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 100px 0 100px;
+  margin-top: 24px;
+  .post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+  }
+  .sideBarBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    box-sizing: border-box;
+    .aboutUsBox {
+      width: 274px;
+      min-height: 44px;
+      margin-top: 24px;
+      .aboutUs {
+        font-size: 16px;
+        color: rgba(82, 82, 82, 1);
+        font-family: "Helvetica Neue", Courier, monospace;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .page {
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    .sideBarBox {
+      display: none; /* Hide the Friends Area on mobile */
+    }
+    .post {
+      width: 90%; /* Take up the full width of the screen */
+    }
+  }
+}
